@@ -1,0 +1,12 @@
+name: sfaa
+channels:
+    - conda-forge
+    - bioconda
+    - pytorch
+dependencies:
+    - pytorch
+    - pandas
+    - numpy
+    - r-base=4.1
+    - r-tidyverse
+    - bioconductor-viper    
