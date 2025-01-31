@@ -2,6 +2,8 @@
 
 Estimate splicing factor activities from changes in exon inclusion or gene expression.
 
+![Graphical Abstract](graphical_abstract.png)
+
 ## Requirements
 
 Install conda/mamba environment:
