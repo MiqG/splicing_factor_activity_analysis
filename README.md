@@ -14,7 +14,7 @@ mamba install -f environment.yaml
 ### From exon inclusion signatures (DeltaPSI)
 
 1. Check inputs:
-    - exon inclusion signatures as delta PSIs ([`files/examples/signatures/Danielsson2013-EX.tsv.gz`](https://github.com/MiqG/splicing_factor_activity_analysis/files/examples/signatures/Danielsson2013-EX.tsv.gz)):
+    - exon inclusion signatures as delta PSIs ([`files/examples/signatures/Danielsson2013-EX.tsv.gz`](https://github.com/MiqG/splicing_factor_activity_analysis/tree/main/files/examples/signatures/Danielsson2013-EX.tsv.gz)):
         ```shell
         $ zcat Danielsson2013-EX.tsv.gz | head -20
         EVENT	SRR837859	SRR837861	SRR837858	SRR837860	SRR837864	SRR837862	SRR837865	SRR837863
@@ -39,7 +39,7 @@ mamba install -f environment.yaml
         HsaEX0004224	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0
         ```
 
-    - splicing factor-exon network(s) directory ([`files/sf_networks/exon_based/exon_inclusion`](https://github.com/MiqG/splicing_factor_activity_analysis/files/sf_networks/exon_based/exon_inclusion)):
+    - splicing factor-exon network(s) directory ([`files/sf_networks/exon_based/exon_inclusion`](https://github.com/MiqG/splicing_factor_activity_analysis/tree/main/files/sf_networks/exon_based/exon_inclusion)):
         ```shell
         .
         ├── ENASFS-metaexperiment0-delta_psi.tsv.gz
@@ -70,14 +70,14 @@ mamba install -f environment.yaml
     ```
     
 3. Check output:
-    - exon inclusion-based splicing factor activity estimation ([`files/examples/outputs/sf_activity-exon_based.tsv.gz`](https://github.com/MiqG/splicing_factor_activity_analysis/files/examples/outputs/sf_activity-exon_based.tsv.gz)):
+    - exon inclusion-based splicing factor activity estimation ([`files/examples/outputs/sf_activity-exon_based.tsv.gz`](https://github.com/MiqG/splicing_factor_activity_analysis/tree/main/files/examples/outputs/sf_activity-exon_based.tsv.gz)):
         ```shell
         ```
 
 ### From gene expression signatures (log2FC)
 
 1. Check inputs:
-    - gene expression signatures as log2 fold changes ([`files/examples/signatures/Hodis2022-invitro_eng_melanoc-genexpr_cpm.tsv.gz`](https://github.com/MiqG/splicing_factor_activity_analysis/files/examples/signatures/Hodis2022-invitro_eng_melanoc-genexpr_cpm.tsv.gz)):
+    - gene expression signatures as log2 fold changes ([`files/examples/signatures/Hodis2022-invitro_eng_melanoc-genexpr_cpm.tsv.gz`](https://github.com/MiqG/splicing_factor_activity_analysis/tree/main/files/examples/signatures/Hodis2022-invitro_eng_melanoc-genexpr_cpm.tsv.gz)):
         ```shell
         ENSEMBL	CB___2.CB___Engineered_melanocytes___False	C___1.C___Engineered_melanocytes___False	CBT3___4a.CBT3___Engineered_melanocytes___False	CBTP___4c.CBTP___Engineered_melanocytes___False	WT___0.WT_p15___Engineered_melanocytes___True	CBTA___4b.CBTA___Engineered_melanocytes___False	CBTPA___5b.CBTPA___Engineered_melanocytes___False	CBT_228___3a.CBT_228___Engineered_melanocytes___False	CBTP3___5a.CBTP3___Engineered_melanocytes___False
         ENSG00000225880	0.015033017024177434	0.0007221241768273594	-0.001326681835879362	-0.011634674664527105	0.0	0.02204721324651151	-0.009283984704949698	-0.004208418758251628	-0.006781458508999312
@@ -101,7 +101,7 @@ mamba install -f environment.yaml
         ENSG00000131584	0.02622141315067883	-0.027181458058897212	0.044197056319507655	-0.001393788362747117	0.0	0.010157462257172678	-0.03142404756322281	0.003767481978802223	-0.028600569662224573
         ```
 
-    - splicing factor-gene network(s) directory ([`files/sf_networks/gene_based/bulkgenexpr`](https://github.com/MiqG/splicing_factor_activity_analysis/files/sf_networks/gene_based/bulkgenexpr)):
+    - splicing factor-gene network(s) directory ([`files/sf_networks/gene_based/bulkgenexpr`](https://github.com/MiqG/splicing_factor_activity_analysis/tree/main/files/sf_networks/gene_based/bulkgenexpr)):
         ```shell
         .
         ├── ENASFS-metaexperiment0-log2fc_genexpr.tsv.gz
@@ -113,7 +113,7 @@ mamba install -f environment.yaml
         └── Rogalska2024-HELA_CERVIX-log2fc_genexpr.tsv.gz
         ```
 
-    - adjustment model for gene-baed estimation of splicing factor activity ([`files/adj_models/gene_based/bulkgenexpr`](https://github.com/MiqG/splicing_factor_activity_analysis/files/adj_models/gene_based/bulkgenexpr)): 
+    - adjustment model for gene-baed estimation of splicing factor activity ([`files/adj_models/gene_based/bulkgenexpr`](https://github.com/MiqG/splicing_factor_activity_analysis/tree/main/files/adj_models/gene_based/bulkgenexpr)): 
         ```shell
         .
         ├── input_regulators.tsv.gz
@@ -154,7 +154,7 @@ mamba install -f environment.yaml
     ```
     
 3. Check output:
-    - exon inclusion-based splicing factor activity estimation ([`files/examples/outputs/sf_activity-gene_based.tsv.gz`](https://github.com/MiqG/splicing_factor_activity_analysis/files/examples/outputs/sf_activity-gene_based.tsv.gz)):
+    - exon inclusion-based splicing factor activity estimation ([`files/examples/outputs/sf_activity-gene_based.tsv.gz`](https://github.com/MiqG/splicing_factor_activity_analysis/tree/main/files/examples/outputs/sf_activity-gene_based.tsv.gz)):
         ```shell
         ```
 
