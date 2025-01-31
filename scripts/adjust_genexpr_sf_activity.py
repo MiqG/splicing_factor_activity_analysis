@@ -36,7 +36,7 @@ def main():
 
     # load
     activity = pd.read_table(activity_file, index_col=0)
-    weights = [torch.load(os.path.join(models_dir,f)) for f in os.listdir(models_dir) if "weights" in f]
+    weights = [torch.load(os.path.join(models_dir,f), weights_only=True) for f in os.listdir(models_dir) if "weights" in f]
     input_regulators = list(pd.read_table(os.path.join(models_dir,"input_regulators.tsv.gz"), header=None)[0])
     output_regulators = list(pd.read_table(os.path.join(models_dir,"output_regulators.tsv.gz"), header=None)[0])
 
